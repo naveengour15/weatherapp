@@ -20,7 +20,7 @@ const server = http.createServer((req, res) => {
         if (req.url == "/") {
             console.log("url");
             requests(
-            "http://api.openweathermap.org/data/2.5/weather?q=Bhopal&units=metric&appid=d247507cb618703b8f1022beaa44f1a6"
+            "http://api.openweathermap.org/data/2.5/weather?q=Bhopal&units=metric&appid=API_KEY"
             )
             .on("data", (chunk) => {
                 const objData = JSON.parse(chunk);
